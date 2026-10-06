@@ -28,12 +28,15 @@ flowchart TD
 
 ```pseudo-code
 DECLARE A : INTEGER
-DECLARE B : INTEGER
-DECLARE Hasil : INTEGER
 
 INPUT A
-INPUT B
-Hasil <- A + B
 
+IF A > 10 THEN
+    OUTPUT "ANGKA Lebih besar dari 10"
+ELSEIF A >= 5 THEN
+    OUTPUT "Angka lebih besar dari 5"
+Else
+    OUTPUT "Angka lebih kecil dari 10"
+ENDIF
 OUTPUT "Hasil nya adalah ", Hasil
 ```
